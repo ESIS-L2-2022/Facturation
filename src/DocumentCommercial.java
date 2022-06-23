@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public abstract class DocumentCommercial {
     private Long numero;
     private Client client;
@@ -20,4 +22,10 @@ public abstract class DocumentCommercial {
     public double getTVA() {
         return 16 * 100 / this.getTotal();
     }
+
+    public class Detail {
+        public ArrayList<Ligne> ligne = new ArrayList<Ligne>();
+
+    }
+
 }
