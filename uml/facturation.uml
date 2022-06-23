@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/darkangel/java_app/facturation/src</OriginalElement>
+  <nodes>
+    <node x="263.1126251568917" y="-36.88850455541774">Personne</node>
+    <node x="-766.34945688658" y="-8.389224520345806">Ligne</node>
+    <node x="835.197161871144" y="-121.03157942472848">Main</node>
+    <node x="531.6674526423197" y="-301.8507956067765">Facture</node>
+    <node x="-407.2780476181292" y="-387.3507956067765">DocumentCommercial.Detail</node>
+    <node x="-106.84819046254805" y="-8.389224520345806">Client</node>
+    <node x="683.7516896322394" y="125.61149544458226">Personne.Adresse</node>
+    <node x="-398.63818794085864" y="267.3240231325965">Produit</node>
+    <node x="537.6674526423197" y="-400.1854537682409">Devis</node>
+    <node x="85.29781819143847" y="475.35183602766597">Categorie</node>
+    <node x="-1.2799439518838653" y="-443.8507956067765">DocumentCommercial</node>
+    <node x="852.197161871144" y="9.66225814137647">mesure.IUniteMesure</node>
+    <node x="469.66745264231974" y="-203.5161374453121">BonDeCommande</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="BonDeCommande" target="DocumentCommercial" relationship="GENERALIZATION">
+      <point x="-139.0" y="0.0" />
+      <point x="154.0619265580737" y="-173.5161374453121" />
+      <point x="3.841870509957573" y="101.0" />
+    </edge>
+    <edge source="Personne.Adresse" target="Personne" relationship="INNER_CLASS">
+      <point x="-188.0" y="-316.5" />
+      <point x="123.5" y="0.0" />
+    </edge>
+    <edge source="Devis" target="DocumentCommercial" relationship="GENERALIZATION">
+      <point x="-102.0" y="0.0" />
+      <point x="151.5" y="-27.334658161464404" />
+    </edge>
+    <edge source="DocumentCommercial.Detail" target="DocumentCommercial" relationship="INNER_CLASS">
+      <point x="91.0" y="0.0" />
+      <point x="-151.5" y="0.0" />
+    </edge>
+    <edge source="DocumentCommercial" target="DocumentCommercial.Detail" relationship="TO_ONE">
+      <point x="-151.5" y="15.0" />
+      <point x="91.0" y="15.0" />
+    </edge>
+    <edge source="Facture" target="DocumentCommercial" relationship="GENERALIZATION">
+      <point x="-108.0" y="0.0" />
+      <point x="151.5" y="71.0" />
+    </edge>
+    <edge source="DocumentCommercial.Detail" target="Ligne" relationship="TO_MANY">
+      <point x="-91.0" y="0.0" />
+      <point x="-621.84945688658" y="-342.8507956067765" />
+      <point x="0.0" y="-185.0" />
+    </edge>
+    <edge source="Produit" target="Categorie" relationship="TO_ONE">
+      <point x="170.5" y="54.027812895069474" />
+      <point x="-106.5" y="0.0" />
+    </edge>
+    <edge source="Client" target="Personne" relationship="GENERALIZATION">
+      <point x="112.5" y="0.0" />
+      <point x="154.0619265580737" y="92.6107754796542" />
+      <point x="154.0619265580737" y="51.12250155221432" />
+      <point x="-123.5" y="-96.98899389236794" />
+    </edge>
+    <edge source="Personne" target="Personne.Adresse" relationship="TO_ONE">
+      <point x="123.5" y="15.0" />
+      <point x="-188.0" y="-301.5" />
+    </edge>
+    <edge source="Ligne" target="Produit" relationship="TO_ONE">
+      <point x="144.5" y="-8.81415929203547" />
+      <point x="-278.59654049210116" y="167.79661618761872" />
+      <point x="-278.59654049210116" y="564.3240231325965" />
+      <point x="-139.0" y="0.0" />
+    </edge>
+    <edge source="DocumentCommercial" target="Client" relationship="TO_ONE">
+      <point x="-151.5" y="0.0" />
+      <point x="-1.2799439518838653" y="-9.389224520345806" />
+      <point x="0.0" y="-102.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.7031111111111111" showDependencies="true" x="233.9999999999999" y="118.5" />
+  <SelectedNodes>
+    <node>BonDeCommande</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
